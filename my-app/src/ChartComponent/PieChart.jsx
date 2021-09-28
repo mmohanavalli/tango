@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Pie } from 'react-chartjs-2';
 import { pie_chart } from '../list_json/list_all_json.js'
-import {handleChart} from './common.js';
 
 class PieChart extends React.Component {
     constructor(props) {
@@ -15,7 +14,6 @@ class PieChart extends React.Component {
 
     componentDidMount() {
         this.getPieData();
-        handleChart(this);
     }
 
 
